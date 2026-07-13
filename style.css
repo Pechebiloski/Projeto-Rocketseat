@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*alterei as imagens com um desing proprio apenas para testar, estava apredendo mais sobre o figma */
+
 :root {
     ---text-color: white;
-    ---bg-url: url('assets/mobileDark.png');
+    ---bg-url: url('assets/mobileDark.jpg');
     ---stroke-color: rgba(255, 255, 255, 0.05);
     ---suface-color: rgba(255, 255, 255, 0.1);
     ---suface-color-hover: rgba(255, 255, 255, 0.2);
@@ -14,7 +17,7 @@
 }
 .light {
     ---text-color: black;
-    ---bg-url: url('assets/mobileLight.png');
+    ---bg-url: url('assets/mobileLight.jpg');
     ---stroke-color: rgba(0, 0, 0, 0.1);
     ---suface-color: rgba(0, 0, 0, 0.1);
     ---suface-color-hover: rgba(0, 0, 0, 0.2);
@@ -28,12 +31,15 @@ body {
     background-position: top center;
     background-size: cover;
 }  
+
 body * {
     font-family: 'Inter', sans-serif;
-    color: var(---text-color);
+    color: var(---text-color); 
 }
+
 #container   {
-    width: 360px;
+    width: 100%;
+    max-width: 500px;
 margin: 56px auto 0px;
 padding: 0px 24px;
 }          
@@ -141,10 +147,10 @@ footer {
 }
 @media (min-width: 768px) {
    :root {
-        ---bg-url: url('assets/desktopDark.png');
+        ---bg-url: url('assets/desktopDark.jpg');
 
     }
 .light {
-        ---bg-url: url('assets/desktopLight.png');
+        ---bg-url: url('assets/desktopLight.jpg');
     }
 }
